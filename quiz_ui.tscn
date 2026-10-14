@@ -1,0 +1,400 @@
+[gd_scene format=3 uid="uid://bxsv60uwo8m6a"]
+
+[ext_resource type="Script" uid="uid://chhwpfdg51pu6" path="res://ui/quiz_ui.gd" id="1_bd40q"]
+[ext_resource type="Script" uid="uid://cjmmhbp1b5312" path="res://addons/StyleboxFancy/StyleBorder.gd" id="1_ogw6m"]
+[ext_resource type="Script" uid="uid://bkl6g25jwb47h" path="res://addons/StyleboxFancy/StyleBoxFancy.gd" id="2_skfpi"]
+[ext_resource type="Script" uid="uid://7kgucqfuxrtu" path="res://ui/components/answer_grid.gd" id="2_wps8r"]
+[ext_resource type="Script" uid="uid://mx8yoryoomc6" path="res://scripts/quiz_background.gd" id="7_bg"]
+[ext_resource type="Script" uid="uid://bq77o0ps0dtsr" path="res://scripts/background_camera.gd" id="8_cam"]
+
+[sub_resource type="GDScript" id="GDScript_23fe6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tmecp"]
+script = SubResource("GDScript_23fe6")
+
+[sub_resource type="MeshTexture" id="MeshTexture_m33di"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ipo2f"]
+texture = SubResource("MeshTexture_m33di")
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_uvhsm"]
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_ogw6m"]
+
+[sub_resource type="StyleBox" id="StyleBox_xj0j8"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("2_skfpi")
+color = Color(0.3572105, 0.13463748, 0.28811786, 1)
+texture = SubResource("CurveXYZTexture_ogw6m")
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBox" id="StyleBox_t112f"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("2_skfpi")
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uvhsm"]
+
+[sub_resource type="StyleBox" id="StyleBox_tmecp"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("2_skfpi")
+metadata/_custom_type_script = "uid://bkl6g25jwb47h"
+
+[sub_resource type="Theme" id="Theme_bd40q"]
+Button/colors/font_color = Color(0.87317336, 0.9764901, 0.94997674, 1)
+Button/styles/disabled = SubResource("StyleBoxEmpty_tmecp")
+Button/styles/disabled_mirrored = SubResource("StyleBoxTexture_ipo2f")
+Button/styles/focus = SubResource("StyleBoxLine_uvhsm")
+Button/styles/hover = SubResource("StyleBox_xj0j8")
+Button/styles/hover_mirrored = SubResource("StyleBox_t112f")
+Button/styles/normal = SubResource("StyleBoxFlat_uvhsm")
+Button/styles/pressed = SubResource("StyleBox_tmecp")
+CheckBox/icons/checked = null
+CheckBox/icons/checked_disabled = null
+CheckBox/icons/radio_checked = null
+CheckBox/icons/radio_checked_disabled = null
+CheckBox/icons/radio_unchecked = null
+CheckBox/icons/radio_unchecked_disabled = null
+CheckBox/icons/unchecked = null
+CheckBox/icons/unchecked_disabled = null
+CheckButton/icons/checked = null
+CheckButton/icons/checked_disabled = null
+CheckButton/icons/checked_disabled_mirrored = null
+CheckButton/icons/checked_mirrored = null
+CheckButton/icons/unchecked = null
+CheckButton/icons/unchecked_disabled = null
+CheckButton/icons/unchecked_disabled_mirrored = null
+CheckButton/icons/unchecked_mirrored = null
+CodeEdit/icons/bookmark = null
+CodeEdit/icons/breakpoint = null
+CodeEdit/icons/can_fold = null
+CodeEdit/icons/can_fold_code_region = null
+CodeEdit/icons/completion_color_bg = null
+CodeEdit/icons/executing_line = null
+CodeEdit/icons/folded = null
+CodeEdit/icons/folded_code_region = null
+CodeEdit/icons/folded_eol_icon = null
+CodeEdit/icons/space = null
+CodeEdit/icons/tab = null
+ColorPicker/icons/add_preset = null
+ColorPicker/icons/bar_arrow = null
+ColorPicker/icons/color_copy = null
+ColorPicker/icons/color_hue = null
+ColorPicker/icons/color_script = null
+ColorPicker/icons/expanded_arrow = null
+ColorPicker/icons/folded_arrow = null
+ColorPicker/icons/menu_option = null
+ColorPicker/icons/overbright_indicator = null
+ColorPicker/icons/picker_cursor = null
+ColorPicker/icons/picker_cursor_bg = null
+ColorPicker/icons/sample_bg = null
+ColorPicker/icons/sample_revert = null
+ColorPicker/icons/screen_picker = null
+ColorPicker/icons/shape_circle = null
+ColorPicker/icons/shape_rect = null
+ColorPicker/icons/shape_rect_wheel = null
+ColorPickerButton/icons/bg = null
+ColorPresetButton/icons/overbright_indicator = null
+ColorPresetButton/icons/preset_bg = null
+FileDialog/icons/back_folder = null
+FileDialog/icons/clear = null
+FileDialog/icons/create_folder = null
+FileDialog/icons/favorite = null
+FileDialog/icons/favorite_down = null
+FileDialog/icons/favorite_up = null
+FileDialog/icons/file = null
+FileDialog/icons/file_thumbnail = null
+FileDialog/icons/folder = null
+FileDialog/icons/folder_thumbnail = null
+FileDialog/icons/forward_folder = null
+FileDialog/icons/list_mode = null
+FileDialog/icons/load = null
+FileDialog/icons/menu_copy_path = null
+FileDialog/icons/menu_delete = null
+FileDialog/icons/menu_new_folder = null
+FileDialog/icons/menu_open_bundle = null
+FileDialog/icons/menu_refresh = null
+FileDialog/icons/menu_show_in_file_manager = null
+FileDialog/icons/parent_folder = null
+FileDialog/icons/reload = null
+FileDialog/icons/save = null
+FileDialog/icons/sort = null
+FileDialog/icons/thumbnail_mode = null
+FileDialog/icons/toggle_filename_filter = null
+FileDialog/icons/toggle_hidden = null
+FoldableContainer/icons/expanded_arrow = null
+FoldableContainer/icons/expanded_arrow_mirrored = null
+FoldableContainer/icons/folded_arrow = null
+FoldableContainer/icons/folded_arrow_mirrored = null
+GraphEdit/icons/grid_toggle = null
+GraphEdit/icons/layout = null
+GraphEdit/icons/minimap_toggle = null
+GraphEdit/icons/snapping_toggle = null
+GraphEdit/icons/zoom_in = null
+GraphEdit/icons/zoom_out = null
+GraphEdit/icons/zoom_reset = null
+GraphEditMinimap/icons/resizer = null
+GraphFrame/icons/resizer = null
+GraphNode/icons/port = null
+GraphNode/icons/resizer = null
+HScrollBar/icons/decrement = null
+HScrollBar/icons/decrement_highlight = null
+HScrollBar/icons/decrement_pressed = null
+HScrollBar/icons/increment = null
+HScrollBar/icons/increment_highlight = null
+HScrollBar/icons/increment_pressed = null
+HSlider/icons/grabber = null
+HSlider/icons/grabber_disabled = null
+HSlider/icons/grabber_highlight = null
+HSlider/icons/tick = null
+HSplitContainer/icons/grabber = null
+HSplitContainer/icons/touch_dragger = null
+Icons/icons/close = null
+ItemList/icons/scroll_hint = null
+LineEdit/icons/clear = null
+OptionButton/icons/arrow = null
+PopupMenu/icons/checked = null
+PopupMenu/icons/checked_disabled = null
+PopupMenu/icons/radio_checked = null
+PopupMenu/icons/radio_checked_disabled = null
+PopupMenu/icons/radio_unchecked = null
+PopupMenu/icons/radio_unchecked_disabled = null
+PopupMenu/icons/search = null
+PopupMenu/icons/submenu = null
+PopupMenu/icons/submenu_mirrored = null
+PopupMenu/icons/unchecked = null
+PopupMenu/icons/unchecked_disabled = null
+RichTextLabel/icons/horizontal_rule = null
+ScrollContainer/icons/scroll_hint_horizontal = null
+ScrollContainer/icons/scroll_hint_vertical = null
+SpinBox/icons/down = null
+SpinBox/icons/down_disabled = null
+SpinBox/icons/down_hover = null
+SpinBox/icons/down_pressed = null
+SpinBox/icons/up = null
+SpinBox/icons/up_disabled = null
+SpinBox/icons/up_hover = null
+SpinBox/icons/up_pressed = null
+SpinBox/icons/updown = null
+SplitContainer/icons/h_grabber = null
+SplitContainer/icons/h_touch_dragger = null
+SplitContainer/icons/v_grabber = null
+SplitContainer/icons/v_touch_dragger = null
+TabBar/icons/close = null
+TabBar/icons/decrement = null
+TabBar/icons/decrement_highlight = null
+TabBar/icons/drop_mark = null
+TabBar/icons/increment = null
+TabBar/icons/increment_highlight = null
+TabContainer/icons/decrement = null
+TabContainer/icons/decrement_highlight = null
+TabContainer/icons/drop_mark = null
+TabContainer/icons/increment = null
+TabContainer/icons/increment_highlight = null
+TabContainer/icons/menu = null
+TabContainer/icons/menu_highlight = null
+TextEdit/icons/space = null
+TextEdit/icons/tab = null
+Tree/icons/arrow = null
+Tree/icons/arrow_collapsed = null
+Tree/icons/arrow_collapsed_mirrored = null
+Tree/icons/checked = null
+Tree/icons/checked_disabled = null
+Tree/icons/indeterminate = null
+Tree/icons/indeterminate_disabled = null
+Tree/icons/scroll_hint = null
+Tree/icons/select_arrow = null
+Tree/icons/unchecked = null
+Tree/icons/unchecked_disabled = null
+Tree/icons/updown = null
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/decrement_pressed = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/icons/increment_pressed = null
+VSlider/icons/grabber = null
+VSlider/icons/grabber_disabled = null
+VSlider/icons/grabber_highlight = null
+VSlider/icons/tick = null
+VSplitContainer/icons/grabber = null
+VSplitContainer/icons/touch_dragger = null
+Window/icons/close = null
+Window/icons/close_pressed = null
+
+[sub_resource type="Theme" id="Theme_23fe6"]
+
+[sub_resource type="Theme" id="Theme_w4v58"]
+
+[sub_resource type="Theme" id="Theme_wps8r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ogw6m"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gv7wa"]
+
+[sub_resource type="FontVariation" id="FontVariation_skfpi"]
+
+[sub_resource type="Theme" id="Theme_ogw6m"]
+default_font = SubResource("FontVariation_skfpi")
+
+[node name="Main" type="Control" unique_id=1315434875]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("Theme_bd40q")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=917321277]
+
+[node name="MainLayout" type="VBoxContainer" parent="CanvasLayer" unique_id=223235718]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_23fe6")
+
+[node name="AnswersContainer" type="ScrollContainer" parent="CanvasLayer/MainLayout" unique_id=1946143991]
+unique_name_in_owner = true
+layout_mode = 2
+theme = SubResource("Theme_w4v58")
+script = ExtResource("2_wps8r")
+
+[node name="Button" type="Button" parent="CanvasLayer/MainLayout/AnswersContainer" unique_id=2025349566]
+layout_mode = 2
+theme = SubResource("Theme_wps8r")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_ogw6m")
+text = "go"
+
+[node name="Button2" type="Button" parent="CanvasLayer/MainLayout/AnswersContainer" unique_id=1638598292]
+layout_mode = 2
+text = "went"
+
+[node name="Button3" type="Button" parent="CanvasLayer/MainLayout/AnswersContainer" unique_id=1711908690]
+layout_mode = 2
+text = "gone"
+
+[node name="Button4" type="Button" parent="CanvasLayer/MainLayout/AnswersContainer" unique_id=564680355]
+layout_mode = 2
+text = "going"
+
+[node name="ResultLabel" type="Label" parent="CanvasLayer/MainLayout" unique_id=1529319234]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Result will be here"
+
+[node name="QuestionImage" type="TextureRect" parent="CanvasLayer/MainLayout" unique_id=1396955690]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="QuestionLabel" type="Label" parent="CanvasLayer/MainLayout" unique_id=592350845]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_gv7wa")
+layout_mode = 2
+text = "She___to school yesterday"
+
+[node name="SettingsContainer" type="VBoxContainer" parent="CanvasLayer/MainLayout" unique_id=1289879223]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/MainLayout/SettingsContainer" unique_id=1087495266]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+text = "Buttons behavior"
+
+[node name="EvasionOptionButton" type="OptionButton" parent="CanvasLayer/MainLayout/SettingsContainer" unique_id=985656180]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+tooltip_text = "Evasion"
+
+[node name="StartQuizButton" type="Button" parent="CanvasLayer/MainLayout/SettingsContainer" unique_id=2114483910]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Begin"
+
+[node name="EndGameButtons" type="HBoxContainer" parent="CanvasLayer" unique_id=1413229137]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -25.0
+offset_right = 640.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RestartButton" type="Button" parent="CanvasLayer/EndGameButtons" unique_id=1578263456]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "Restart"
+
+[node name="SelectFileButton" type="Button" parent="CanvasLayer/EndGameButtons" unique_id=863769669]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Select a file"
+
+[node name="ShowAnswers" type="Button" parent="CanvasLayer/EndGameButtons" unique_id=355419957]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Show Answers"
+
+[node name="Background" type="ColorRect" parent="." unique_id=781668201]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_ogw6m")
+color = Color(1, 0.31711304, 1, 0.060000002)
+script = ExtResource("1_bd40q")
+
+[node name="QuizFileDialog" type="FileDialog" parent="." unique_id=903666240]
+unique_name_in_owner = true
+title = "Open a File"
+file_mode = 0
+access = 2
+
+[node name="QuizBackground" type="Node3D" parent="." unique_id=2049361042]
+script = ExtResource("7_bg")
+
+[node name="Camera3D" type="Camera3D" parent="QuizBackground"]
+current = true
+fov = 55.0
+near = 0.05
+script = ExtResource("8_cam")

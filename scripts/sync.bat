@@ -1,0 +1,1 @@
+for /R %%f in (*.gd) do copy /Y "%%f" "%%f.txt"
